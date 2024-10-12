@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<style type="text/css">
+    form > input, form > label{
+    display: block;
+    position: static;
+    margin: 10px;
+}
+#nome, #data{
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 30px;
+    border: 0.1px solid rgb(117, 117, 117);
+}
+input[value="Enviar formulário"]{
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    border: 2px solid white;
+    transition: all .4s;
+}
+input[value="Enviar formulário"]:hover{
+    background-color: #f03813;
+}
+body{
+   background-image: linear-gradient(to left , #c3062c , #9d1d36);
+   font-family: Arial, Helvetica, sans-serif;
+}
+form textarea{
+    border-radius: 20px;
+    padding: 10px;
+}os
+form{
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ffffff;
+    width: 500px;
+    height: 550px;
+    position: sticky;
+    border-radius: 20px;
+}
+</style>
+<body>
+   
+    <form action="form.php" method="post">
+        <h1>Formulário</h1>
+        <label for="nome">Digite seu nome : </label>
+        <input type="text" name="nome_name" id="nome" required>
+        <label for="data">Digite sua data de nascimento :</label>
+        <input type="date" name="data_name" id="data">
+        <label for="texto">Insira sua mensagem :</label>
+        <textarea name="texto_name" id="texto" cols="30" rows="10" maxlength="100" minlength="10"></textarea>
+        <p id="contador">0</p>
+        <input type="submit" value="Enviar formulário">
+    </form>
+    <script src="form.js"></script>
+</body>
+</html>

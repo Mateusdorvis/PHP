@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagem TOUR</title>
+</head>
+<style>
+    form > label, form > input {
+        margin: 5px;
+        display: block;
+    }
+</style>
+<body>
+    <h1>Olá , seja bem-vindo (a) ao site da Viagem TOUR</h1>
+    <form action="viagens.php" method="post">
+      <label for="nome">Digite seu nome de usuário:</label>
+      <input type="text" name="nome" id="nom" required>
+      <label for="cidade-inicio"> De :</label>
+      <input type="text" name="origem" id="cidade-inicio" required>
+      <label for="cidade-final">Para:</label>
+      <input type="text" name="final" id="cidade-final" required>
+      <label for="data-ini">Data início :</label>
+      <input type="date" name="ida" id="data-ini" required>
+      <label for="data-final">Data Final :</label>
+      <input type="date" name="volta" id="data-final" required>
+      <input type="submit" value="Enviar cadastro">
+    </form>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ler e editar arquivo</title>
+</head>
+<style>
+    body, html{
+        max-width: 100%;
+        height: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #551bb3;
+        color: white;
+    }
+    body h1, body nav, body form{
+        padding: 10px;
+    }
+    span{
+        font-style: italic;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    textarea{
+        border-radius: 20px;
+        max-width: 700px;
+    }
+    /*estilo padrão*/
+    input{
+        width: 200px;
+        height: 30px;
+        padding: 3px;
+        border-radius: 20px;
+    }
+    input[type="file"]{
+        width: 500px;
+    }
+    input[type='submit']{
+        background-color: #21203f;
+        border: 0;
+        color: white;
+        font-size: 15px;
+
+    }
+    a{
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    form > label, form > textarea, form > input{
+        display: block;
+        margin: 5px;
+    }
+    footer{
+        width: 100%;
+        background-color: #40223c;
+        position: absolute;
+        bottom: 0;
+        padding: 30px;
+    }
+</style>
+<body>
+    <nav>
+        <p>Você pode criar um arquivo : <a href="novo.html">Fazer novo arquivo.</a></p>
+     </nav>
+     <h1>Edição e leitura de arquivo.txt .</h1>
+    <form action="ler.php" method='POST'>
+        <label for="arquivo_aberto">Abra um arquivo de texto <span>(ex, arquivo.txt)</span>:</label>
+        <input type="file" name="arquivo_aberto" id="arquivo_aberto" accept=".txt" required>
+        <input type="submit" value="Abrir e editar arquivo">
+    </form>
+    <footer>
+        <p>Página desenvolvida por <b>Mateus Dorvis&reg;&copy;</b></p>
+    </footer>
+</body>
+</html>

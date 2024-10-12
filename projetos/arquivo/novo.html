@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo arquivo.txt</title>
+</head>
+<style>
+    body{
+        max-width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #551bb3;
+        color: white;
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    textarea{
+        padding: 20px;
+        border-radius: 20px;
+        max-width: 700px;
+        max-height: 200px;
+    }
+    body h1, body form, body nav{
+        padding: 20px;
+    }
+    input{
+        width: 200px;
+        height: 30px;
+        padding: 3px;
+        border-radius: 20px;
+    }
+    input[type='submit']{
+        background-color: #21203f;
+        border: 0;
+        color: white;
+        font-size: 15px;
+
+    }
+    a{
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    form > label, form > textarea, form > input{
+        display: block;
+        margin: 5px;
+    }
+    footer{
+        width: 100%;
+        background-color: #40223c;
+        position: absolute;
+        bottom: 0;
+        padding: 30px;
+    }
+</style>
+<body>
+    <nav>
+       <p>Se tiveres um arquivo você pode editar e ler : <a href="ler.html">Ler e editar arquivo.</a></p>
+    </nav>
+    <h1>Criar e salvar um arquivo.txt</h1>
+    <form action="novo.php" method='POST'>
+        <label for="texto">Escreva o seu texto aqui:</label>
+        <textarea name="conteudo" id="texto" cols="30" rows="10" required></textarea>
+        <label for="nome">Escreva o nome do arquivo que deseja salvar :</label>
+        <input type="text" name="nome" id="nome" required>
+        <input type="submit" value="salvar">
+    </form>
+    <footer>
+        <p>Página desenvolvida por <b>Mateus Dorvis&reg;&copy;</b></p>
+    </footer>
+</body>
+</html>
