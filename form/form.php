@@ -25,7 +25,7 @@
         $usuario = 'mateus_dorvis';
         $host = 'localhost';
         $database = 'formularios';
-        $senha_usuario = 'oi';
+        $senha_usuario = '**********';
         $conexao = new mysqli($host, $usuario, $senha_usuario, $database);//conexão com o banco de dados
         //é verdade que a conexão deu erro? se sim 
         if ($conexao -> connect_error){
